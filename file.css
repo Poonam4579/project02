@@ -1,0 +1,344 @@
+body{
+  margin: 0px;
+  padding: 0px;
+
+}
+.top{
+  margin: 0px;
+  
+}
+.navlist{
+  margin: 0px;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+ position:relative;
+ text-align: center;
+ height: 100px;
+
+
+}
+.top-logo{
+  margin:0px;
+  padding:0px;
+}
+.top-logo img{
+  /* width: 100%; */
+  margin: 0px;
+  max-width: 50%;
+  
+}
+.all-li{
+  display: flex;
+  position: relative;
+  left: 150px;
+  top: 30px;
+ 
+}
+.box{
+  margin: 0px;
+  padding-right: 70px;
+  list-style: none;
+  
+  
+}
+.order{
+position: absolute;
+right: 30px;
+top: 25px;
+margin: 2px;
+padding: 10px;
+width: 15%;
+color: rgb(188, 26, 26);
+background-color: white;
+border: 0.2px solid grey;
+font-size: 15px;
+border-radius: 5px;
+height: 50px;
+}
+.order:hover{
+  border: 2px solid rgb(227, 43, 43);
+  /* font-size: 16px; */
+  /* font-weight: bold; */
+}
+li a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+li a:hover{
+  color: rgb(189, 22, 22);
+}
+#first{
+background-image: url(https://www.shutterstock.com/image-photo/watercolor-artistic-image-lunch-meals-260nw-2539433369.jpg);
+width: 100%;
+height: 500px;
+background-size: cover;
+opacity: 90%;
+position: relative;
+
+}
+.food-title{
+  position: absolute;
+  top: 10px;
+  left: 1%;
+  font-size: 80px;
+  letter-spacing: -5px;
+  width: 62%;
+  color: rgb(193, 44, 44);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: opacity 1s ease , transform 1s ease;
+ 
+}
+.food-title.show{
+  display: block;
+  opacity: 1; 
+  transform: translateX(0);
+}
+.sub-title{
+  position: absolute;
+  top: 250px;
+  left: 1%;
+  font-size:18px;
+  width: 80%;
+  color: rgb(56, 83, 16);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: 300;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: opacity 1s ease , transform 2s ease;
+   
+}
+.sub-title.show{
+  display: block;
+  opacity: 1; 
+  transform: translateX(0);
+}
+#services-are{
+  width: 100%;
+  height: auto;
+  position:relative;
+
+}
+.ser-heading{
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  top: 50px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+
+}
+.ser-heading.show{
+  transform: translateX(0);
+  opacity: 1;
+  display: block;
+}
+.for-grid{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   /* position: absolute;
+   top: 170px; */
+   margin-top: 100px;
+   margin-bottom: 70px;
+
+}
+.text-of{
+  width: 90%;
+  text-align: center;
+  position: relative;
+  left: 20px;
+}
+.about-chefs{
+  height: 230px;
+  font-size:20px;
+
+}
+#four-logos{
+  width: 90%;
+  /* height: 10%; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  left: 40px;
+  top: 0px;
+
+}
+.service-logo {
+  width: 25%;
+  height: 20px;
+  margin: 15%;
+
+}
+.service-logo img{
+  /* width: 10%;
+  height: 8%; */
+  width: 100%;
+  
+}
+.images-of-chefs{
+    width: 80%;
+  height: 500px;
+  position: relative;
+  right: 0px;
+  left: 70px;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out, opacity 1s ease-in-out ; 
+  opacity: 1;
+ 
+
+}
+.images-of-chefs img{
+  /* width: 80%;
+  height: 500px;
+  position: relative;
+  right: 0px;
+  left: 70px; */
+}
+#menu{
+  width: 100%;
+  height: 600px;
+  text-align: center;
+ 
+}
+.menu-heading{
+  font-size: 50px;
+  margin-top: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(22, 88, 7);
+  letter-spacing: 25px;
+  font-style: italic;
+}
+.button-box{
+  width: 80%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 50px;
+  position: relative;
+  left: 5%;
+
+}
+.timing-lunch{
+  width: 200px;
+  height: 35px;
+  background: none;
+  border: 2px solid rgb(207, 39, 39);
+  border-radius: 5px;
+  margin: 50px;
+  font-size: 15px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     color: brown;
+
+}
+.timing-lunch:active{
+  background-color: rgb(186, 23, 23);
+  color: white;
+}
+.timing-break{
+  width: 200px;
+  height: 35px;
+  background: none;
+  border: 2px solid rgb(207, 39, 39);
+  border-radius: 5px;
+  margin: 50px;
+  font-size: 15px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     color:brown;
+
+}
+.timing-break:active{
+  background-color: rgb(186, 23, 23);
+  color: white;
+}
+.timing-dinner{
+  width: 200px;
+  height: 35px;
+  background: none;
+  border: 2px solid rgb(207, 39, 39);
+  border-radius: 5px;
+  margin: 50px;
+  font-size: 15px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     color:brown;
+
+}
+.timing-dinner:active{
+  background-color: rgb(186, 23, 23);
+  color: white;
+}
+.timing-offer{
+  width: 200px;
+  height: 35px;
+  background: none;
+  border: 2px solid rgb(207, 39, 39);
+  border-radius: 5px;
+  margin: 50px;
+  font-size: 15px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     color:brown;
+
+}
+.timing-offer:active{
+  background-color: rgb(186, 23, 23);
+  color: white;
+}
+.food-box{
+  width: 100%;
+  display: flex;
+  height: 300px;
+
+}
+.food-img-01{
+  border: 2px solid rgb(0, 0, 0);
+  width: 30%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/033/494/670/small_2x/animated-illustration-of-foods-menu-burger-french-fries-and-soft-drink-suitable-for-foods-promotion-free-video.jpg');
+  /* margin: 2px; */
+}
+
+.food-img-02{
+  border: 2px solid rgb(5, 5, 5);
+  width: 30%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease;
+  background-image: url('https://cdn.pixabay.com/photo/2023/05/30/16/56/food-8029158_640.png');
+  /* margin: 2px; */
+}
+
+.food-img-03{
+  border: 2px solid rgb(0, 0, 0);
+  width: 30%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh-PXXXaoTrgxee1SjkfIBIyntEs1f2A_ljH8JXOC9Se3vUJXFOcYVWixVGMCPfv_ImKw&usqp=CAU');
+  /* margin: 2px; */
+}
+
+.food-img-04{
+  border: 2px solid rgb(0, 0, 0);
+  width: 30%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdXkcHXKLvjewIK91EZquvftJSfbYUus5l_6JD3c_-HA5vv88BN_A2aM2kH78M_TeV2xw&usqp=CAU');
+  /* margin: 2px; */
+}
+
+
