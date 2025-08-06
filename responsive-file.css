@@ -1,0 +1,182 @@
+@media(max-width:768px){
+  .all-li{
+    display:none;
+    flex-direction: column;
+    background-color: rgb(205, 203, 203);
+    opacity: 80%;
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    top: 80px;
+    right: 0px;
+    margin: 10px;
+    transition: all 1s ease-in-out;
+  }
+  .box{
+    margin: 10px;
+    opacity: 100%;
+    font-size: 1.3rem;
+  }
+  
+  .all-li.active{
+    display: flex;
+    flex-direction: column;
+  }
+  .hambarger{
+    display: block;
+  
+  }
+  .for-oder{
+    width: 40%;
+    margin-left: 15%;
+  }
+  #first{
+background-image: url(https://www.shutterstock.com/image-photo/watercolor-artistic-image-lunch-meals-260nw-2539433369.jpg);
+max-width: 100%;
+height: 500px;
+background-size: cover;
+opacity: 90%;
+
+  }
+  .food-title{
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    
+  }
+  .sub-title{
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  text-align: center;
+  
+  }
+  .for-grid{
+    display: flex;
+    flex-direction: column;
+  }
+  #four-logos{
+    margin: 10%;
+  }
+  .about-chefs{
+    margin: 5%;
+    margin-bottom: 35%;
+  }
+  .images-of-chefs{
+    height: 300px;
+    width: 80%;
+  }
+  #menu{
+    margin-bottom: 5px;
+    height: 650px;
+  }
+  .button-box{
+    width: 100%;
+    margin-left: 0px;
+    margin: 0px;
+   
+  }
+  .timing-break{
+    width: 100%;
+    margin: 10px;
+  }
+  .food-img-01{
+    width: 100%;
+    border: none;
+  }
+  .timing-lunch{
+    width: 100%;
+    margin: 10px;
+  }
+  .food-img-02{
+    width: 100%;
+    border: none;
+  }
+  .timing-dinner{
+    width: 100%;
+    margin: 10px;
+  }
+  .food-img-03{
+    width: 100%;
+    border: none;
+  }
+  .timing-offer{
+    width: 100%;
+    margin: 10px;
+    font-size: 0.7rem;
+  }
+  .food-img-04{
+    width: 100%;
+    border: none;
+  }
+  .food-box{
+    height:300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  #about-section{
+    margin-top: 0;
+   
+  }
+  .about-img{
+    height:300px;
+  }
+  .s-title{
+    font-size: 1rem;
+  }
+  .main-h{
+    font-size: 2rem;
+  }
+  .about-content{
+    display: none;
+  }
+  .information-box{
+    height:120px;
+  }
+  #book-table{
+    height:300px;
+  }
+  .book-odr{
+    
+    font-size: 0.8rem;
+    letter-spacing: 0.3rem;
+  }
+  .box-for-contact{
+    margin-top: 12%;
+  }
+  #contact{
+    height: 250px;
+  }
+  .for-numbers{
+    margin-right: 0px;
+  }
+  .ph{
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    margin: 10px;
+  }
+  .other-con{
+    margin-left: 10px;
+  }
+  .location{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+  .mail{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+  .link{
+    margin-top: 10%;
+  }
+  .social-media{
+    margin-top: 5%;
+  }
+  .logo{
+    width: 7%;
+  }
+
+
+}

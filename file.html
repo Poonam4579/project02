@@ -5,19 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="file.css">
+  <link rel="stylesheet" href="responsive-file.css">
 </head>
 <body>
   <header class="top">
     <nav class="navlist"> 
       <div class="top-logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLocC5l-LR_o5DYz_kug3vADv0yJOmkEcvtQ&s" alt="logo"></div>
+      <div class="hambarger">
+  &#9776;
+</div>
       <ul class="all-li">
-        <li class="box"><a href="#home">Home</a></li>
-        <li class="box"><a href="#about">About</a></li>
+        <li class="box"><a href="#first">Home</a></li>
         <li class="box"><a href="#services">Services</a></li>
-        <li class="box"><a href="#menu">menu</a></li>
-        <li class="box"><a href="#contact us">Contact us</a></li>
+        <li class="box"><a href="#menu">Menu</a></li>
+        <li class="box"><a href="#about">About</a></li>
+        <li class="box"><a href="#contact">Contact us</a></li>
       </ul>
-      <div><button class="order">Order Online</button></div>
+      <div class="for-oder"><button class="order">Order Online</button></div>
     </nav>
   </header>
  
@@ -66,7 +70,85 @@
 
   </div>
 
+  <div id="about-section">
+    <div class="about-img">
+      <iframe max-width="100%" width="100%" height="100%" src="https://www.youtube.com/embed/3Njxv_D3MEQ?si=lLmoaX9RCbwV_q5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="title">
+      <h4 class="s-title">About Our Restrunt</h4>
+      <h2 class="main-h">We Provide Good Food for Your Family</h2>
+      <p class="about-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque officiis mollitia beatae exercitationem, eos molestias cumque vel sed dolorem ipsum enim aut veritatis est a dignissimos temporibus obcaecati accusantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatum omnis ab quae consequatur, excepturi natus eius iure sapiente repellendus, animi magni! Iure quis animi error corrupti at iusto enim. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, quisquam. Consectetur illo nulla iusto aperiam, et modi! Error, tempora. Quasi nam consequuntur soluta modi velit molestias. Illo iste nobis sapiente.</p>
+      <button class="subscride"><a href="https://www.youtube.com/watch?v=3Njxv_D3MEQ" target="_blank">Subscribe </a></button>
+      <hr>
+    </div>
+    
+  </div>
+
+  <hr>
+
+  <div id="book-table">
+    <div class="information-box">
+      <div class="first-form">
+      <form action="/action_page.php" method="get" class="pNum-form" >
+      <input type="number"  id="person" name="person" max="6" min="1" placeholder="person">
+      </div>
+
+      <div class="sec-form">
+        <input type="date" class="date-form">
+      </div>
+      <div class="third-form">
+        <input type="time" class="time-form">
+      </div>
+      <!-- <button class="book-odr" onclick="conditions()"> Book Order</button> -->
+     
+      </form>
+    </div>
+    <button class="book-odr" onclick="conditions(event)"> Book Order</button>
+  </div>
+<hr>
+<div id="contact">
+  <h2 class="con-heading">Contact us</h2>
+  <div class="box-for-contact">
+    <div class="for-numbers">
+      <p class="ph">  📞 + 91 8392-38294</p>
+      <p class="ph">  📞 + 91 8392-38294</p>
+      <p class="ph">  📞 + 91 8392-38294</p>
+    </div>
+    <div class="other-con">
+      <p class="location"> 📍 america, gt road, 23</p>
+      <p class="mail">  ✉️ xyz@gmail.com</p>
+    </div>
+  </div>
+</div>
+<hr>
+<footer id="end">
+  <h4 class="ab"> This is about our food factory</h4>
+  <div class="link"><a href="#"> dksloleo alldfml</a></div>
+
+  <div class="social-media">
+    <div class="logo">
+      <a href="https://www.instagram.com/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTo85iR96uThiMOe8HgnAdeUxtKvi8-p5IcSjhFcQ2RJf_Xjd8357WZNc5cGT0t8IftHA&usqp=CAU" alt="insta"></a></div>
+    
+    <div class="logo">
+    <a href="https://www.facebook.com/" target="_blank"><img src="https://thumbs.dreamstime.com/b/facebook-logo-vector-eps-file-squared-coloured-easily-editable-have-white-background-high-resolution-255556941.jpg" alt="facebook"></a></div>
+    <div class="logo">
+    <a href="https://in.linkedin.com/" target="_blank"><img src="https://i.pinimg.com/736x/0c/78/d0/0c78d03cbfa19d5f3d7ad1b6e49f957b.jpg" alt="linkdin"></a></div>
+    <div class="logo">
+    <a href="https://x.com/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9-tTzB-gL7U-a4yBVPlQFNJ6ycWMcFBxx6HelYMNOYISgICkknw09TvEqQTXZ5zouH4&usqp=CAU" alt="twitter"></a></div>
+    <div class="logo">
+    <a href="https://www.youtube.com/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqEkpJAO4M6Avq0359NW3XvdOcI-VK7Wsy8F7ctM3MkHaroOvQYqMCNvS36PDkzxf5AoU&usqp=CAU" alt="you-tube"></a></div>
+  </div>
+</footer>
+
+<!-- <div class="humbarger">
+  &#9776;
+</div> -->
+
+
+
+
   <script src="file.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>
