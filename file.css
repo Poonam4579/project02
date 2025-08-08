@@ -4,10 +4,14 @@ body{
   overflow-x: hidden;
 
 }
+*{
+  box-sizing: border-box;
+}
 .top{
   margin: 0px;
   /* position: fixed;
   z-index: 1; */
+  height: 100px;
   
   
 }
@@ -170,9 +174,9 @@ position: relative;
 
 }
 .text-of{
-  width: 90%;
+  width: 100%;
   text-align: center;
-  margin-left: 5%;
+  margin: 0 auto;
 }
 .about-chefs{
   height: 230px;
@@ -449,6 +453,7 @@ position: relative;
  display: flex;
    justify-content: center;
    box-shadow: 2px 2px 2px rgb(135, 135, 135);
+  
 }
 .first-form{
   width: 30%;
@@ -598,186 +603,164 @@ color: rgb(79, 78, 78);
   margin-left:0px;
   margin-top: 10px;
 }
-/*
-@media(max-width:768px){
-  .all-li{
-    display:none;
-    flex-direction: column;
-    background-color: rgb(205, 203, 203);
-    opacity: 80%;
-    position: absolute;
-    width: 100%;
-    padding: 10px;
-    top: 80px;
-    right: 0px;
-    margin: 10px;
-    transition: all 1s ease-in-out;
-  }
-  .box{
-    margin: 10px;
-    opacity: 100%;
-    font-size: 1.3rem;
-  }
-  
-  .all-li.active{
-    display: flex;
-    flex-direction: column;
-  }
-  .hambarger{
-    display: block;
-  
-  }
-  .for-oder{
-    width: 40%;
-    margin-left: 15%;
-  }
-  #first{
-background-image: url(https://www.shutterstock.com/image-photo/watercolor-artistic-image-lunch-meals-260nw-2539433369.jpg);
-max-width: 100%;
-height: 500px;
-background-size: cover;
-opacity: 90%;
-
-  }
-  .food-title{
-    font-size: 3rem;
-    width: 100%;
-    text-align: center;
-    
-  }
-  .sub-title{
-  position: absolute;
-  top: 55%;
+ #service-section-a{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 600px;
+ }
+ .online-order-img{
+  margin: 2%;
   width: 100%;
+
+ }
+ .online-order-img img{
+  border-radius: 2%;
+  max-width: 100%;
+  height: auto;
+ }
+ .about-ordr{
+  font-size:1.3rem;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+
+ }
+ .online-order-hd{
+  color:rgb(193, 50, 50);
+  letter-spacing: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ #service-section-b{
+    background-image: url('https://img.freepik.com/free-photo/top-view-table-full-food_23-2149209253.jpg?semt=ais_hybrid&w=740&q=80');
+  max-width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+ }
+ #scoter{
+  max-width: 100%;
+  height: 250px;
+  overflow-x: hidden;
+
+ }
+ #scoter img{
+  max-width: 100%;
+  height: 220px;
+  margin-top: 3%;
+  position: relative;
+  animation-name: example;
+  animation-delay: 2s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  /* animation: 3s linear 1s infinite running slide-in; */
+  
+ }
+ @keyframes example {
+  0%{ left: 0%}
+  /* 50%{left:50% ;} */
+  100% {left: 100%}
+ }
+
+ #service-section-c{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+
+ }
+ .for-functions{
+  font-size: 3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 10%;
+  text-align: center;
+  letter-spacing: 2rem;
+  
+
+ }
+ .about-functions-food{
+  font-size: 1.3rem;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+
+ }
+ .functions-img{
+  margin: 1%;
+  width: 100%;
+
+ }
+ .functions-img img{
+  border-radius: 5%;
+  max-width: 100%;
+
+ }
+ #service-section-d{
+  width: 100%;
+  height: 800px;
+ text-align: center;
+
+ }
+ .varity-heading{
+  font-size: 3rem;
+  letter-spacing: 1.5rem;
+  margin:5%;
+
+ }
+ .varity-food-img{
+  text-align: center;
+  width: 100%;
+
+
+ }
+ .varity-food-img img{
+  max-width: 100%;
+  width: 80%;
   text-align: center;
   
-  }
-  .for-grid{
-    display: flex;
-    flex-direction: column;
-  }
-  #four-logos{
-    margin: 10%;
-  }
-  .about-chefs{
-    margin: 5%;
-    margin-bottom: 35%;
-  }
-  .images-of-chefs{
-    height: 300px;
-    width: 80%;
-  }
-  #menu{
-    margin-bottom: 5px;
-    height: 650px;
-  }
-  .button-box{
-    width: 100%;
-    margin-left: 0px;
-    margin: 0px;
-   
-  }
-  .timing-break{
-    width: 100%;
-    margin: 10px;
-  }
-  .food-img-01{
-    width: 100%;
-    border: none;
-  }
-  .timing-lunch{
-    width: 100%;
-    margin: 10px;
-  }
-  .food-img-02{
-    width: 100%;
-    border: none;
-  }
-  .timing-dinner{
-    width: 100%;
-    margin: 10px;
-  }
-  .food-img-03{
-    width: 100%;
-    border: none;
-  }
-  .timing-offer{
-    width: 100%;
-    margin: 10px;
-    font-size: 0.7rem;
-  }
-  .food-img-04{
-    width: 100%;
-    border: none;
-  }
-  .food-box{
-    height:300px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
-  }
-  #about-section{
-    margin-top: 0;
-   
-  }
-  .about-img{
-    height:300px;
-  }
-  .s-title{
-    font-size: 1rem;
-  }
-  .main-h{
-    font-size: 2rem;
-  }
-  .about-content{
-    display: none;
-  }
-  .information-box{
-    height:120px;
-  }
-  #book-table{
-    height:300px;
-  }
-  .book-odr{
-    
-    font-size: 0.8rem;
-    letter-spacing: 0.3rem;
-  }
-  .box-for-contact{
-    margin-top: 12%;
-  }
-  #contact{
-    height: 250px;
-  }
-  .for-numbers{
-    margin-right: 0px;
-  }
-  .ph{
-    font-size: 0.9rem;
-   
-    margin: 10px;
-  }
-  .other-con{
-    margin-left: 10px;
-  }
-  .location{
-    font-size: 1rem;
-    letter-spacing: 0.2rem;
-  }
-  .mail{
-    font-size: 1rem;
-    letter-spacing: 0.2rem;
-  }
-  .link{
-    margin-top: 10%;
-  }
-  .social-media{
-    margin-top: 5%;
-  }
-  .logo{
-    width: 7%;
-  }
+ }
+ .abuot-varity{
+  font-size: 1.2rem;
+  padding: 3%;
+  margin: 0px 20px;
+
+ }
+ .helping{
+  font-size: 3rem ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: rgb(219, 113, 14);
+  letter-spacing: 1rem;
+ }
+ #service-section-e{
+  width:100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
 
 
-}
+ }
+ .helpin-img{
+  width: 100%;
+  margin: 2%;
+  
+ }
+ .helpin-img img{
+  max-width: 100%;
+  border-radius: 3%;
+  width: 100%;
+  height: auto;
+
+
+ }
+ .about-helping{
+  width: 100%;
+  margin: 2%;
+  text-align: center;
+  font-size: 1.2rem;
+
+ }
+ 
+ 

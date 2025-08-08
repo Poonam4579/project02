@@ -149,9 +149,11 @@ function conditions(event) {
   }
 }
 
-let humburger = document.querySelector('.hambarger');
-let navlist = document.querySelector('.all-li');
+  let hambarger = document.querySelector('.hambarger');
+  let navlist = document.querySelector('.all-li');
 
-humburger.addEventListener("click", () => {
-  navlist.classList.toggle('active');
-});
+    hambarger.addEventListener("click", () => {
+      navlist.classList.toggle('active');
+    });
+ 
+

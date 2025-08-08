@@ -10,17 +10,21 @@
     top: 80px;
     right: 0px;
     margin: 10px;
-    transition: all 1s ease-in-out;
+    z-index: 1000;
+    /* transition: all 1s ease-in-out; */
   }
   .box{
-    margin: 10px;
+    margin-top: 45px;
     opacity: 100%;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
   }
   
   .all-li.active{
     display: flex;
     flex-direction: column;
+    height: 400px;
+    /* transition: all 2s ease-in-out; */
   }
   .hambarger{
     display: block;
@@ -178,5 +182,53 @@ opacity: 90%;
     width: 7%;
   }
 
+  #service-section-a{
+    display:flex;
+    flex-direction: column;
+   
+  }
+  .online-order-img{
+    width: 100%;
+  }
+  .online-order-img img{
+   width: 60%;
+   height: 250px;
+  }
+  .about-ordr{
+  padding: 5px;
+   font-size: 0.9rem;
+  }
+  #scoter img{
+    width: 30%;
+    height: 150px;
+  }
+  #scoter{
+    height: 170px; 
+  }
+  .about-functions-food{
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+  .functions-img img{
+    height: 300px;
+    margin-right: 5px;
+  }
+  #service-section-c{
+    height: 350px;
+  }
+  .for-functions{
+    font-size: 2rem;
+  }
+  .varity-heading{
+    font-size: 2rem;
+  }
+
+#service-section-d{
+  height: 650px;
+}
+#service-section-e{
+  flex-direction: column;
+  height: 800px;
+}
 
 }
