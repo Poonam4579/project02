@@ -1,3 +1,4 @@
+
 let box1 = document.querySelector('.food-title');
     let box2 = document.querySelector('.sub-title');
     let box3 = document.querySelector('.ser-heading');
@@ -149,11 +150,7 @@ function conditions(event) {
   }
 }
 
-  let hambarger = document.querySelector('.hambarger');
-  let navlist = document.querySelector('.all-li');
-
-    hambarger.addEventListener("click", () => {
-      navlist.classList.toggle('active');
-    });
  
+
+
 

@@ -230,5 +230,52 @@ opacity: 90%;
   flex-direction: column;
   height: 800px;
 }
+#file-about-a{
+  height: 1100px;
+}
+  
+#file-about-b{
+  flex-direction: column;
 
+}
+.background{
+  width: 100%;
+  text-align: center;
+  margin: 1%;
+ 
+}
+.background img{
+  width: 70%;
+  height: 80%;
+}
+.about-struggle{
+font-size: 1rem;
+padding: 10px;
+}
+#file-about-c{
+  height: 700px;
+  flex-direction: column;
+}
+.hd-current{
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+.para-current{
+  font-size: 1rem;
+  margin: 7%;
+  text-align: center;
+}
+.current-img img{
+width: 80%;
+height: 300px;
+}
+.about-staff{
+  font-size: 0.7rem;
+}
+.left-arrow{
+  height: 400px;
+}
+.right-arrow{
+  height: 400px;
+}
 }
