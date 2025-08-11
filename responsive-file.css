@@ -278,4 +278,12 @@ height: 300px;
 .right-arrow{
   height: 400px;
 }
+#section-contact-a{
+  flex-direction: column;
+  height: 800px;
+  text-align: center;
+}
+body{
+  overflow-x: hidden;
+}
 }
