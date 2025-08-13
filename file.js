@@ -11,9 +11,11 @@ let box1 = document.querySelector('.food-title');
       box2.classList.add("show");
     }, 2000);
 
-setTimeout(() => {
-  box3.classList.add("show");
-}, 5000);
+
+  setTimeout(() => {
+       box3.classList.add("show");
+  }, 5000);
+  
 
 let images = [
   'https://media.istockphoto.com/id/803934008/photo/female-chef-in-kitchen.jpg?s=612x612&w=0&k=20&c=jYq8CNkSAvzu8QwpKY71xQ2HuqKPWqDjBUcj72XtyEU=',
