@@ -1,0 +1,83 @@
+ .veg, th, td{
+  border: 1px solid black;
+  font-weight: 700;
+ }
+ th{
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+ }
+ #section-veg{
+  text-align: center;
+  width: 100%;
+  height: 700px;
+ }
+ .veg{
+  text-align: center;
+  width: 90%;
+  height: 500px;
+  margin: 5%;
+  background-image: url('https://t4.ftcdn.net/jpg/01/88/74/65/360_F_188746535_DA865YDipdoCZs3qB65NgyT8khKDaBKe.jpg');
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-position: center;
+  background-size: cover;
+ }
+ .veg-heading{
+  width: 100%;
+  text-align:left;
+  margin-left: 5%;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: rgb(147, 200, 82) underline;
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: fadeInveg 2s ease forwards ;
+  animation-delay: 2s;
+  /* animation-iteration-count: infinite; */
+ }
+ @keyframes fadeInveg {
+  0% {opacity: 0; transform: translateX(-100px);}
+  100% {opacity: 1; transform: translateX(0px);}
+ }
+ #section-non-veg{
+  margin-top: 10%;
+  text-align: center;
+  width: 100%;
+  height: 700px;
+ }
+ .non-veg-heading{
+  width: 100%;
+   text-align:right;
+  margin-right: 5%;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: rgb(234, 54, 54) underline;
+  opacity: 0;
+  transform: translateX(100px);
+  animation: fadeIn 2s ease forwards ;
+  animation-delay: 2s;
+  /* animation-iteration-count: infinite; */
+ }
+  @keyframes fadeIn {
+  0% {opacity: 0; transform: translateX(100px);}
+  100% {opacity: 1; transform: translateX(0px);}
+ }
+ .non-veg{
+  text-align: center;
+  width: 90%;
+  height: 500px;
+  margin: 5%;
+  background-image: url('https://images.template.net/108164/non-veg-food-background-pc3tj.png');
+  font-weight: 500;
+  background-position: center;
+  background-size: cover;
+  color: rgb(201, 201, 201);
+ }
+.non-veg, th, td{
+   border: 1px solid rgb(137, 137, 137);
+  font-weight: 700;
+
+}
+ 
