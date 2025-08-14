@@ -1110,13 +1110,14 @@ width: 40%;
   top: 2%;
   left: 10%;
   background: none;
-  border: 1px solid grey;
+  border: 1px solid rgb(165, 165, 165);
   width: 8%;
   height: 30px;
   border-radius: 5px;
+  /* border:none; */
 }
 .close-btn:hover{
-  box-shadow: 1px 1px 1px grey;
+  box-shadow: 1px 1px 1px rgb(239, 151, 151);
   background-color: rgba(214, 213, 213, 0.243);
 }
 .close-btn:active{

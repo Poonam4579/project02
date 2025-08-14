@@ -26,6 +26,30 @@
   </header>
 
   <div id="service-section-a">
+    <div class="order-box">
+      <h3 class="order-box-heading"> Enter Details
+        <button class="close-btn">❌</button>
+      </h3>
+      <!-- <button class="close-btn">❌</button> -->
+        <form action="/action_page.php" method="get" class="order-form" >
+          <label for="name" id="name-lb">Name :</label>
+          <input type="text"  id="name"  placeholder="Enter your name" required>
+          <label for="ph.num" id="ph-num-lb">Ph.number :</label>
+          <input type="text" id="ph-num"  placeholder="Enter phone Number" required>
+          <label for="box-person" id="box-person-lb">Person Count :</label>
+          <input type="number"  id="box-person" name="person" max="6" min="1" placeholder="person" required>
+          <label for="box-date-form" class="box-date-form-lb">Date :</label>
+        <input type="date" class="box-date-form" required>
+         <label for="box-time-form" class="box-time-form-lb">Time :</label>
+        <input type="time" class="box-time-form" required>
+
+        <div class="odr-btn">
+          <button class="order-box-btn" type="button"> Order Now</button>
+        </div>
+        </form>
+        
+           </div>
+
     <div class="online-order-img">
       <img src="https://media.istockphoto.com/id/1249219777/photo/shopping-online-concept-parcel-or-paper-cartons-with-a-shopping-cart-logo-in-a-trolley-on-a.jpg?s=612x612&w=0&k=20&c=EWKEahyVLY8iAHyirCCDESHRGW37lqUJ7In0SssNSLE=" alt="online order">
     </div>
@@ -109,7 +133,7 @@
     <a href="https://www.youtube.com/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqEkpJAO4M6Avq0359NW3XvdOcI-VK7Wsy8F7ctM3MkHaroOvQYqMCNvS36PDkzxf5AoU&usqp=CAU" alt="you-tube"></a></div>
   </div>
 </footer>
-<script>
+<!-- <script>
   
   let hambarger = document.querySelector('.hambarger');
   let navlist = document.querySelector('.all-li');
@@ -119,7 +143,7 @@
     });
   
 
-</script>
+</script> -->
 
   <script src="services.js"></script>
   <script src="comman.js"></script>

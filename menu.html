@@ -27,7 +27,32 @@
   </header>
  
  <div id="section-veg">
-  <h2 class="veg-heading">Vegitarian Items🥗🍏</h2>
+  <div class="order-box">
+      <h3 class="order-box-heading"> Enter Details
+        <button class="close-btn">❌</button>
+      </h3>
+      <!-- <button class="close-btn">❌</button> -->
+        <form action="/action_page.php" method="get" class="order-form" >
+          <label for="name" id="name-lb">Name :</label>
+          <input type="text"  id="name"  placeholder="Enter your name" required>
+          <label for="ph.num" id="ph-num-lb">Ph.number :</label>
+          <input type="text" id="ph-num"  placeholder="Enter phone Number" required>
+          <label for="box-person" id="box-person-lb">Person Count :</label>
+          <input type="number"  id="box-person" name="person" max="6" min="1" placeholder="person" required>
+          <label for="box-date-form" class="box-date-form-lb">Date :</label>
+        <input type="date" class="box-date-form" required>
+         <label for="box-time-form" class="box-time-form-lb">Time :</label>
+        <input type="time" class="box-time-form" required>
+
+        <div class="odr-btn">
+          <button class="order-box-btn" type="button"> Order Now</button>
+        </div>
+        </form>
+        
+           </div>
+
+
+  <button class="veg-heading">Vegitarian Items🥗🍏</button>
  <table class="veg">
   <tr>
     <th>Breakfast 🍳🥣</th>
@@ -103,9 +128,9 @@
   </tr>
  </table>
  </div>
- <hr>
+ 
  <div id="section-non-veg">
-  <h2 class="non-veg-heading">Non-Vegitarian Items🍗🥩</h2>
+  <button class="non-veg-heading">Non-Vegitarian Items🍗🥩</button>
  <table class="non-veg">
   <tr>
     <th>Breakfast 🍳🥣</th>
