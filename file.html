@@ -24,8 +24,31 @@
       <div class="for-oder"><button class="order">Order Online</button></div>
     </nav>
   </header>
- 
+  
   <div id="first">
+    <div class="order-box">
+      <h3 class="order-box-heading"> Enter Details
+        <button class="close-btn">❌</button>
+      </h3>
+      <!-- <button class="close-btn">❌</button> -->
+        <form action="/action_page.php" method="get" class="order-form" >
+          <label for="name" id="name-lb">Name :</label>
+          <input type="text"  id="name"  placeholder="Enter your name" required>
+          <label for="ph.num" id="ph-num-lb">Ph.number :</label>
+          <input type="text" id="ph-num"  placeholder="Enter phone Number" required>
+          <label for="box-person" id="box-person-lb">Person Count :</label>
+          <input type="number"  id="box-person" name="person" max="6" min="1" placeholder="person" required>
+          <label for="box-date-form" class="box-date-form-lb">Date :</label>
+        <input type="date" class="box-date-form" required>
+         <label for="box-time-form" class="box-time-form-lb">Time :</label>
+        <input type="time" class="box-time-form" required>
+
+        <div class="odr-btn">
+          <button class="order-box-btn" type="button"> Order Now</button>
+        </div>
+        </form>
+        
+           </div>
     <h2 class="food-title">Stay cheesy and keep eating delicious food.</h2>
     <h6 class="sub-title">Food is art, and food is love. Food is anything solid or liquid that provides essential nutrients for growth, energy, and bodily functions. It's crucial for survival and overall well-being, sourced from both plants and animals. Different food components like carbohydrates, proteins, and fats offer various nutrients that contribute to a healthy body. </h6>
   </div>
@@ -45,10 +68,7 @@
     <div class="images-of-chefs">
     </div>
     </div>
-  
   </div>
-
-
   <hr>
 
   <div id="menu">
