@@ -29,6 +29,7 @@
   opacity: 0;
   transition: opacity 1s ease;
   pointer-events: none; */
+
  }
  .veg.open-table{
 /* opacity:1;
@@ -52,8 +53,8 @@ display:table;
   border: 1.5mm ridge rgb(244, 255, 224);
  }
  .veg-heading:hover{
-  background-color:rgba(239, 253, 209, 0.278);
-border: 1.7mm ridge rgb(217, 251, 159);
+  background-color:rgba(216, 248, 147, 0.278);
+border: 1.7mm ridge rgb(166, 225, 107);
  }
  .veg-heading:active{
   background-color:rgba(245, 255, 224, 0.278);
@@ -117,4 +118,37 @@ pointer-events: auto; */
   font-weight: 700;
 
 }
- 
+.all{
+   width: 80%;
+  height: 80px;
+  text-align:center;
+  /* margin-left: 5%; */
+  margin-top: 10%;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: rgb(82, 106, 200) underline;
+  background-color:rgba(224, 236, 255, 0.278);
+  border: 1.5mm ridge rgb(224, 238, 255);
+
+}
+ .all:hover{
+   background-color:rgba(119, 178, 251, 0.278);
+  border: 1.7mm ridge rgb(87, 139, 251);
+ }
+ .all:active{
+  background-color:rgba(224, 236, 255, 0.278);
+  border: 1.5mm ridge rgb(224, 238, 255);
+ }
+ .veg, .non-veg{
+  max-height:0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+ }
+ .veg.showOn , .non-veg.showOn{
+opacity: 1;
+max-height: 1000px;
+display:table;
+
+ }
