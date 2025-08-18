@@ -26,13 +26,16 @@
     height: 400px;
     /* transition: all 2s ease-in-out; */
   }
+  .top-logo{
+    display:none;
+  }
   .hambarger{
     display: block;
-  
+    margin-left: 10%;
   }
   .for-oder{
     width: 40%;
-    margin-left: 15%;
+    margin-left: 30%;
   }
   #first{
 background-image: url(https://www.shutterstock.com/image-photo/watercolor-artistic-image-lunch-meals-260nw-2539433369.jpg);
@@ -307,5 +310,42 @@ body{
   font-weight: 100;
   width: 100%;
 }
-
+.order-box{
+  width: 80%;
+  margin-left:10%;
+  margin-top: 45%;
+}
+.order-form{
+  row-gap: 5%;
+}
+#name{
+height:25px;
+}
+#name-lb{
+font-size:0.8rem;
+}
+#ph-num{
+  height:25px;
+}
+#ph-num-lb{
+  font-size:0.8rem;
+}
+#box-person{
+  height:25px;
+}
+#box-person-lb{
+  font-size:0.8rem;
+}
+.box-date-form{
+  height:25px;
+}
+.box-date-form-lb{
+  font-size: 0.8rem;
+}
+.box-time-form{
+  height:25px;
+}
+.box-time-form-lb{
+  font-size:0.8rem;
+}
 }

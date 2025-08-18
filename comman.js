@@ -19,7 +19,6 @@ confirm_order.addEventListener("click", (e) => {
 
   if (name.value.trim() === '') {
     Swal.fire({
-      width: '30%',
       icon: 'warning',
       text: 'Enter your Name please!'
     });
@@ -27,7 +26,6 @@ confirm_order.addEventListener("click", (e) => {
   }
   else if (num.value.trim() === '') {
     Swal.fire({
-      width: '30%',
       icon: 'warning',
       text: 'Enter your ph.Number please!'
     });
@@ -35,7 +33,6 @@ confirm_order.addEventListener("click", (e) => {
   }
   else if (per_count.value.trim() === '') {
     Swal.fire({
-      width: '30%',
       icon: 'warning',
       text: 'add person count please!'
     });
@@ -43,7 +40,6 @@ confirm_order.addEventListener("click", (e) => {
   }
   else if (date_odr.value.trim() === '') {
     Swal.fire({
-      width: '30%',
       icon: 'warning',
       text: 'add date please!'
     });
@@ -51,7 +47,6 @@ confirm_order.addEventListener("click", (e) => {
   }
   else if (time_odr.value.trim() === '') {
     Swal.fire({
-      width: '30%',
       icon: 'warning',
       text: 'add time please!'
     });
@@ -59,28 +54,63 @@ confirm_order.addEventListener("click", (e) => {
   }
   else {
     Swal.fire({
-      width: '30%',
-      icon: "success",
+      icon: "success", // remove the width
       title: "Order Confirmed 😊",
     });
     show_odr_box.classList.remove("view");
   }
 
-})
+});
 
 let online_odr = document.querySelector('.order');
 let show_odr_box = document.querySelector('.order-box');
 let close_box = document.querySelector('.close-btn');
+let background_blur = document.querySelector('.overlay');
+
  
 online_odr.addEventListener("click", () => {
   show_odr_box.classList.add("view");
+  background_blur.classList.add("overlay");
+   background_blur.classList.add("on");
 });
 
   close_box.addEventListener("click", () => {
     show_odr_box.classList.remove("view");
+    background_blur.classList.remove("overlay");
     
   });
+background_blur.addEventListener("click", (e) => {
+  if (e.target === background_blur) {
+    show_odr_box.classList.remove("view");
+    background_blur.classList.remove("overlay");
+  };
+});
+show_odr_box.addEventListener("click", (e) => {
+  e.stopPropagation(); //prevents from box click remove
+});
+
+
+let order_btn = document.querySelector('.order-box-btn');
+order_btn.addEventListener("click", () => {
+   
+  let information = {
+    name1: document.querySelector('#name').value,
+    no1: document.querySelector('#ph-num').value,
+    count1: document.querySelector('#box-person').value,
+    date1: document.querySelector('.box-date-form').value,
+    time1: document.querySelector('.box-time-form').value,
+  };
+
+  let orders = JSON.parse(localStorage.getItem("information")) || [];
+  orders.push(information);
+
+  localStorage.setItem("information", JSON.stringify(orders));
+
+  console.log("All orders:", orders);
+
+ 
   
+});
 
 
 
